@@ -31,22 +31,8 @@ public void KotakPojoClsTest() throws StreamWriteException, DatabindException, I
     Bpi bpiPojo = new Bpi(usdPojo,gbpPojo,eurPojo);
 	
 	KotakComplexPojo complextDataPojo = new KotakComplexPojo(timePojo, "disclaimer", "chartName", bpiPojo);
-	//ObjectMapper objMap = new ObjectMapper();
 	JsonMapper objMap = new JsonMapper();
 	objMap.writeValue(new File("./kotakJSON1.json"), complextDataPojo);
 }
 }
 
-
-
-
-
-
-
-
-
-/*         Printing On Console   
-JsonSerializer jsonserializer = JsonSerializer.DEFAULT_READABLE;
-String json = jsonserializer.serialize(complextDataPojo);
-System.out.println(json);  
-*/
