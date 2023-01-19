@@ -34,7 +34,6 @@ public void KotakPojoClsTest() throws StreamWriteException, DatabindException, I
 	//ObjectMapper objMap = new ObjectMapper();
 	JsonMapper objMap = new JsonMapper();
 	objMap.writeValue(new File("./kotakJSON1.json"), complextDataPojo);
-	
 }
 }
 
