@@ -1,4 +1,4 @@
-package pojocls;
+package practiespojocls;
 
 public class Students {
 	  String name;
