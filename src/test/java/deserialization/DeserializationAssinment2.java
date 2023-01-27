@@ -18,5 +18,9 @@ public class DeserializationAssinment2 {
 	   System.out.println(topic);
 	   String yearIndex2 = jsonBody.getData().get(2).getID_Year();
 	   System.out.println(yearIndex2);
+	   
+	   
+	   
+	   
    }
 }
