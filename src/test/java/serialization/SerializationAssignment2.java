@@ -21,7 +21,6 @@ public class SerializationAssignment2 {
 	@Test
     public void Assignment2Test() throws StreamWriteException, DatabindException, IOException {
 	Annotations annotationObject = new Annotations("Census Bureau",source_Descecription,"ACS 5-year Estimate","http://www.census.gov/programs-surveys/acs/","B01003","Diversity","Demographics");
-	Source sourceObject = new Source(annotationObject,"ACS 5-year Estimate");
 	Data dateObj1 = new Data("01000US","United States","2020","2020","326569308","united-states");
 	Data dateObj2 = new Data("01000US","United States","2019","2019","324697795","united-states");
 	Data dateObj3 = new Data("01000US","United States","2018","2018","322903030","united-states");
@@ -30,7 +29,7 @@ public class SerializationAssignment2 {
 	Data dateObj6 = new Data("01000US","United States","2015","2015","316515021","united-states");
 	Data dateObj7 = new Data("01000US","United States","2014","2014","314107084","united-states");
 	Data dateObj8 = new Data("01000US","United States","2013","2013","311536594","united-states");
-    ArrayList<Data> dataListObjects = new ArrayList<Data>(); 
+    List<Data> dataListObjects = new ArrayList<Data>(); 
     dataListObjects.add(dateObj1);
     dataListObjects.add(dateObj2);
     dataListObjects.add(dateObj3);
@@ -40,6 +39,7 @@ public class SerializationAssignment2 {
     dataListObjects.add(dateObj7);
     dataListObjects.add(dateObj8);
     
+    Source sourceObject = new Source(annotationObject,"ACS 5-year Estimate");
     List<Source> sourceListObjects = new ArrayList<Source>();
     sourceListObjects.add(sourceObject);
     
